@@ -6,6 +6,11 @@ import CyberSecurity from "./pages/CyberSecurity";
 import Networking from "./pages/Networking";
 import Books from "./pages/Books";
 import Book from "./pages/Book";
+import Login from "./pages/Login";
+import Admin from "./pages/Admin";
+import Semester from "../../backend/models/semester";
+import Sm from "./pages/Sm";
+import AdminBooks from "./pages/AdminBooks";
 
 function App() {
   return (
@@ -19,6 +24,16 @@ function App() {
 
         <Route path="/books" element={<Books />} />
         <Route path="/book" element={<Book />} />
+        <Route path="/login" element={<Login />} />
+
+        <Route path="/admin" element={<Admin />} />
+        {/* <Route path="/semesters/:id" element={<Semester />} /> */}
+
+        <Route path="/semesters/:id" element={<Sm />} />
+        <Route path="/admin-books/:id" element={<AdminBooks />} />
+
+        <Route path="/login" element={<Login />} />
+
       </Routes>
     </Router>
   );
