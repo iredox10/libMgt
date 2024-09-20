@@ -8,7 +8,6 @@ import Books from "./pages/Books";
 import Book from "./pages/Book";
 import Login from "./pages/Login";
 import Admin from "./pages/Admin";
-import Semester from "../../backend/models/semester";
 import Sm from "./pages/Sm";
 import AdminBooks from "./pages/AdminBooks";
 
@@ -27,7 +26,6 @@ function App() {
         <Route path="/login" element={<Login />} />
 
         <Route path="/admin" element={<Admin />} />
-        {/* <Route path="/semesters/:id" element={<Semester />} /> */}
 
         <Route path="/semesters/:id" element={<Sm />} />
         <Route path="/admin-books/:id" element={<AdminBooks />} />
